@@ -4,8 +4,11 @@ import Navbar from './components/navbar/navbar.jsx'
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
+import Footer from './components/Footer/Footer.jsx';
+import AppDownload from './components/AppDownload/AppDownload.jsx';
 const App = () => {
   return (
+    <>
     <div className='app'>      
       <Navbar/>
       <Routes>
@@ -16,6 +19,9 @@ const App = () => {
       </Routes>
       
     </div>
+    <AppDownload/>
+    <Footer/>
+  </>  
   )
 }
 
